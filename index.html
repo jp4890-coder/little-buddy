@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Buddy · Your pocket-sized pal</title>
+<style>
+:root{font-family:ui-rounded,'Avenir Next',system-ui,sans-serif;color:#493d50;background:#fff8eb;font-size:16px}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 25%,#ffe8bd 0,transparent 27%),radial-gradient(circle at 90% 80%,#f6ddea 0,transparent 30%),#fff8eb}button,input{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible{outline:3px solid #8253be;outline-offset:5px}button:disabled{cursor:wait}main{max-width:760px;margin:auto;padding:36px 24px;text-align:center}.brand{font-weight:850;font-size:20px;letter-spacing:-.6px}.brand span{color:#bd5580}header p{font-size:14px;color:#766678;margin:6px 0 32px}h1{font-size:clamp(30px,5vw,42px);letter-spacing:-1.5px;margin:0 0 10px;line-height:1.15}.intro{color:#766678;margin:0 0 30px;line-height:1.6}.panel{background:#fffdf8;border:2px solid #eadfdd;border-radius:30px;padding:32px;box-shadow:0 10px 0 #eeddce80}.choices{border:0;padding:0;margin:26px 0;text-align:left;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.choices legend{font-weight:750;margin-bottom:12px}.choice{position:relative}.choice input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}.choice label{display:block;border:2px solid #e9e0e4;border-radius:20px;text-align:center;padding:10px 8px 14px;background:#faf5f1;transition:.2s}.choice input:checked+label{background:#f0e7fc;border-color:#9a72bb;box-shadow:0 4px 0 #dac7eb}.choice input:focus-visible+label{outline:3px solid #8253be;outline-offset:4px}.choice svg{width:100%;height:114px;display:block}.choice strong{font-size:16px}.name-label{display:block;text-align:left;font-weight:750;margin:0 0 9px}input[type=text]{width:100%;padding:15px 18px;border:2px solid #e9e0e4;border-radius:14px;background:white;color:#493d50}.primary{border:0;background:#77549b;color:white;padding:16px 24px;border-radius:16px;box-shadow:0 4px 0 #563975;font-weight:750;width:100%;margin-top:20px}.primary:hover{background:#68458d}.footnote{font-size:14px;color:#766678;margin:24px 0 0}[hidden]{display:none!important}.pet-heading{display:flex;justify-content:space-between;align-items:center;text-align:left;gap:12px}.pet-heading h1{font-size:30px;overflow-wrap:anywhere}.badge{background:#f1e8fb;color:#765594;font-size:14px;font-weight:750;padding:8px 12px;border-radius:30px;white-space:nowrap}.stage{position:relative;height:300px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 85%,#e8e1ed 0 24%,transparent 24.5%);margin:12px 0}.pet-button{border:0;background:none;width:260px;height:270px;padding:0;position:relative;border-radius:50%;-webkit-tap-highlight-color:transparent}.pet-button svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 7px 0 #493d5010)}.bubble{position:absolute;top:5px;right:0;background:white;border:2px solid #e9e0e4;padding:8px 14px;border-radius:16px;font-weight:700;font-size:14px;z-index:2}.lucky{background:#fff0b9;border:2px solid #efd47b;border-radius:16px;padding:16px;margin:0 0 20px;line-height:1.5}.bubble{max-width:190px;pointer-events:none}.hint{font-size:14px;color:#766678;margin:-2px 0 24px}.meter-label{display:flex;justify-content:space-between;font-weight:750;font-size:15px;margin-bottom:10px}.track{height:17px;border-radius:20px;background:#f0e4ea;overflow:hidden}.fill{height:100%;background:#db78a0;border-radius:20px;width:30%;transition:width .55s ease}.message{min-height:48px;margin:15px 0;color:#766678;font-size:16px;line-height:1.5}.actions{display:grid;grid-template-columns:1fr 1fr;gap:14px}.action{border:2px solid transparent;border-radius:16px;padding:16px;font-weight:800;box-shadow:0 4px 0 #00000012;transition:transform .2s}.action:hover{transform:translateY(-2px)}.feed{background:#ffe2b4}.play{background:#ccebe1}.action span{margin-right:8px}.restart{border:0;background:none;text-decoration:underline;text-underline-offset:4px;margin-top:25px;color:#766678;font-size:14px}#effects{position:absolute;inset:0;pointer-events:none}.particle{position:absolute;left:50%;top:36%;font-size:30px;color:#d85e90;pointer-events:none;animation:float 1.1s ease-out forwards}.food{position:absolute;font-size:42px;left:50%;top:59%;pointer-events:none;animation:munch-food 1.2s forwards}.tail,.ear{transform-box:fill-box;transform-origin:center bottom}.acting-pat .dog-tail{animation:wag .16s alternate infinite}.acting-pat .rabbit-ear{animation:wiggle .2s alternate infinite}.acting-pat.cat{animation:purr .16s alternate infinite}.acting-play{animation:bounce .45s ease-in-out 3}.acting-feed{animation:munch .22s ease-in-out 5}.eyes-happy,.eyes-calm,.mouth-happy,.mouth-calm{display:none}.mood-calm .eyes-sad,.mood-calm .mouth-sad,.mood-excited .eyes-sad,.mood-excited .mouth-sad{display:none}.mood-calm .eyes-calm,.mood-calm .mouth-calm,.mood-excited .eyes-happy,.mood-excited .mouth-happy{display:block}.acting-feed .mouth-sad,.acting-feed .mouth-calm,.acting-feed .mouth-happy{display:none}.eating-mouth{display:none}.acting-feed .eating-mouth{display:block}@keyframes bounce{50%{transform:translateY(-28px) rotate(-4deg)}}@keyframes munch{50%{transform:scale(1.035,.975)}}@keyframes wag{to{transform:rotate(35deg)}}@keyframes wiggle{to{transform:rotate(13deg)}}@keyframes purr{to{transform:translateY(-2px) rotate(1deg)}}@keyframes float{to{transform:translate(var(--drift),-115px) rotate(20deg);opacity:0}}@keyframes munch-food{65%{transform:scale(.8)}100%{transform:translateY(-15px) scale(0);opacity:0}}@media(max-width:520px){main{padding:24px 16px}.panel{padding:24px 18px}.choices{gap:8px}.choice svg{height:90px}.stage{height:275px}.pet-button{width:240px;height:250px}.badge{font-size:12px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.particle{transform:translateX(var(--drift))}}
+.eyes-angry,.eyes-furious,.mouth-angry,.mouth-furious{display:none}
+.mood-angry .eyes-sad,.mood-angry .mouth-sad,.mood-furious .eyes-sad,.mood-furious .mouth-sad{display:none}
+.mood-angry .eyes-angry,.mood-angry .mouth-angry,.mood-furious .eyes-furious,.mood-furious .mouth-furious{display:block}
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand"><span aria-hidden="true">♥</span> little buddy</div><p>A little care. A lot of happy.</p></header>
+<section id="setup" class="panel" aria-labelledby="choose-title">
+<h1 id="choose-title">Small friend, big feelings.</h1><p class="intro">Choose a buddy to brighten your day.</p>
+<form id="adopt-form"><fieldset class="choices"><legend>Who’s coming home with you?</legend></fieldset>
+<label class="name-label" for="pet-name">Give your buddy a name</label><input id="pet-name" type="text" maxlength="24" placeholder="Mochi" autocomplete="off">
+<button class="primary" type="submit">Meet my pet! <span aria-hidden="true">♡</span></button></form>
+<p class="footnote">Just a few happy moments, together.</p>
+</section>
+<section id="home" class="panel" aria-labelledby="buddy-name" hidden>
+<div class="pet-heading"><h1 id="buddy-name" tabindex="-1"></h1><span id="mood" class="badge">Feeling a little blue</span></div>
+<div class="stage"><div id="bubble" class="bubble" role="status" aria-live="polite"></div><button id="pet" class="pet-button" aria-label="Pat your pet"></button><div id="effects" aria-hidden="true"></div></div>
+<p class="hint">Tap your buddy for a gentle pat <span aria-hidden="true">♡</span></p>
+<div class="meter-label"><span>Happiness</span><span id="score">30 / 100</span></div>
+<div id="meter" class="track" role="progressbar" aria-label="Happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30"><div class="fill" id="fill"></div></div>
+<p id="message" class="message" role="status" aria-live="polite"></p>
+<aside id="lucky" class="lucky" role="status" hidden></aside>
+<div class="actions"><button id="feed" class="action feed"><span aria-hidden="true">🥣</span>Feed</button><button id="play" class="action play"><span aria-hidden="true">🎾</span>Play</button></div>
+<button id="restart" class="restart">Choose a new buddy</button>
+</section>
+</main>
+<script>
+const pets={cat:{name:'Mochi',color:'#eeb37e',light:'#ffe0bc',reaction:'Prrr… so cozy!',food:'🐟'},dog:{name:'Biscuit',color:'#c79872',light:'#f7dabc',reaction:'Wag, wag! Love you!',food:'🦴'},rabbit:{name:'Clover',color:'#d0bfdc',light:'#f0e6f5',reaction:'Happy little ear wiggles!',food:'🥕'}};
+const $=id=>document.getElementById(id);
+function drawing(type){const p=pets[type];let ears=type==='cat'?`<path d="M65 105 60 40 112 77M135 77 183 40 183 112" fill="${p.color}"/><path d="m72 75-3-19 22 19m61 0 22-19-1 24" fill="#ed9fa1"/>`:type==='dog'?`<ellipse cx="66" cy="109" rx="27" ry="53" fill="#94684f" transform="rotate(15 66 109)"/><ellipse cx="184" cy="109" rx="27" ry="53" fill="#94684f" transform="rotate(-15 184 109)"/>`:`<g class="ear rabbit-ear"><ellipse cx="96" cy="64" rx="20" ry="54" fill="${p.color}"/><ellipse cx="96" cy="61" rx="9" ry="36" fill="#edb2c7"/></g><g class="ear rabbit-ear"><ellipse cx="153" cy="64" rx="20" ry="54" fill="${p.color}"/><ellipse cx="153" cy="61" rx="9" ry="36" fill="#edb2c7"/></g>`;return `<svg viewBox="0 0 250 270" aria-hidden="true"><g stroke="#694f56" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">${type==='dog'?`<path class="tail dog-tail" d="M172 209q56-2 39-48" fill="none" stroke="${p.color}" stroke-width="22"/>`:type==='cat'?`<path d="M178 220q54 2 31-39" fill="none" stroke="${p.color}" stroke-width="20"/>`:`<circle cx="183" cy="214" r="21" fill="${p.light}"/>`}<ellipse cx="125" cy="203" rx="60" ry="51" fill="${p.color}"/>${ears}<rect x="59" y="77" width="132" height="114" rx="53" fill="${p.color}"/><ellipse cx="125" cy="216" rx="31" ry="28" fill="${p.light}" stroke="none"/><ellipse cx="87" cy="247" rx="23" ry="12" fill="${p.color}"/><ellipse cx="161" cy="247" rx="23" ry="12" fill="${p.color}"/><g fill="#ec97a0" opacity=".65" stroke="none"><ellipse cx="82" cy="151" rx="13" ry="8"/><ellipse cx="167" cy="151" rx="13" ry="8"/></g><g class="eyes-sad"><path d="m91 119 15-4m39 0 15 4"/><path d="M99 130v7m52-7v7"/></g><g class="eyes-angry"><path d="m89 117 18 8m36 0 18-8" stroke-width="5"/><path d="M99 132v5m52-5v5"/></g><g class="eyes-furious"><path d="m87 116 22 14m32 0 22-14" stroke-width="6"/><path d="m93 136 13 1m38 0 13-1" stroke-width="4"/><path d="M174 93v8m5-13h8m-8 18h8m-13 5v8" stroke="#bc4261" stroke-width="3"/></g><g class="eyes-calm"><path d="M93 130q6 7 12 0m40 0q6 7 12 0" fill="none"/></g><g class="eyes-happy"><path d="m91 134 8-8 8 8m36 0 8-8 8 8" fill="none"/></g><path d="m119 147 6 5 6-5" fill="#895768" stroke="#895768"/><path class="mouth-sad" d="M115 165q10-10 20 0" fill="none"/><path class="mouth-angry" d="M111 169q14-17 28 0" fill="none"/><path class="mouth-furious" d="M109 169q16-23 32 0Z" fill="#fff7ec"/><path class="mouth-calm" d="M113 160q12 12 24 0" fill="none"/><path class="mouth-happy" d="M111 159q14 27 28 0Z" fill="#b35f78"/><ellipse class="eating-mouth" cx="125" cy="163" rx="10" ry="8" fill="#b35f78"/>${type==='cat'?'<path d="m77 151-23-3m23 11-24 5m120-13 23-3m-23 11 24 5" stroke-width="2"/>':''}</g></svg>`}
+let type='cat',name='',happiness=30,busy=false,need='hungry',frustration=0;
+function showNeed(){ $('bubble').textContent=need==='hungry'?'I am hungry! Feed me?':'I am bored! Let’s play!'; }
+const choices=document.querySelector('.choices');
+for(const [key,p] of Object.entries(pets)){const box=document.createElement('div');box.className='choice';box.innerHTML=`<input type="radio" id="choose-${key}" name="species" value="${key}" ${key==='cat'?'checked':''}><label for="choose-${key}">${drawing(key)}<strong>${key[0].toUpperCase()+key.slice(1)}</strong></label>`;choices.append(box)}
+choices.addEventListener('change',e=>{type=e.target.value;$('pet-name').placeholder=pets[type].name});
+function update(){const mood=frustration ? ['sad','sad','angry','furious'][frustration] : happiness<40?'sad':happiness<75?'calm':'excited';$('pet').className=`pet-button ${type} mood-${mood}`;$('mood').textContent={sad:'A little blue',calm:'Feeling cozy',excited:'Over the moon!',angry:'Feeling angry',furious:'Feeling furious'}[mood];$('score').textContent=`${happiness} / 100`;$('fill').style.width=`${happiness}%`;$('meter').setAttribute('aria-valuenow',happiness);$('message').textContent={sad:'A little company would be nice.',calm:'Feeling cozy with you.',excited:'You make my day!',angry:'Please listen to what I need.',furious:'I’m really upset. Please help with what I need.'}[mood]}
+$('adopt-form').addEventListener('submit',e=>{e.preventDefault();name=$('pet-name').value.trim()||pets[type].name;happiness=30;need='hungry';frustration=0;$('lucky').hidden=true;$('lucky').textContent='';showNeed();$('buddy-name').textContent=name;$('pet').innerHTML=drawing(type);$('pet').setAttribute('aria-label',`Pat ${name}`);update();$('setup').hidden=true;$('home').hidden=false;$('buddy-name').focus()});
+function interact(action){
+  if(busy)return;
+  busy=true;
+  for(const id of ['pet','feed','play','restart'])$(id).disabled=true;
+  const matched=(need==='hungry'&&action==='feed')||(need==='bored'&&action==='play');
+  const mismatch=action!=='pat'&&!matched;
+  if(mismatch)frustration=Math.min(3,frustration+1);
+  else if(matched)frustration=0;
+  const previous=happiness;
+  happiness=Math.max(0,Math.min(100,happiness+(mismatch?-10:{feed:15,play:20,pat:10}[action])));
+  update();
+  if(mismatch){
+    $('message').textContent=`${name} feels ${['','sad','angry','furious'][frustration]} and is still ${need}. ${need==='hungry'?'Try Feed!':'Try Play!'} Happiness −10.`;
+  }else{
+    $('pet').classList.add(`acting-${action}`);
+    $('message').textContent=action==='feed'?`${name} loves the snack. Happiness +15!`:action==='play'?`${name} is bouncing with joy! Happiness +20!`:`${pets[type].reaction} Happiness +10!`;
+    if(action==='feed'){
+      $('effects').innerHTML=`<span class="food">${pets[type].food}</span>`;
+    }else{
+      for(let i=0;i<5;i++){
+        const particle=document.createElement('span');particle.className='particle';
+        particle.textContent=action==='pat'?'♥':'✦';
+        particle.style.setProperty('--drift',`${(i-2)*42}px`);
+        particle.style.marginLeft=`${(i-2)*23}px`;
+        particle.style.animationDelay=`${i*.08}s`;
+        $('effects').append(particle);
+      }
+    }
+    if(matched)need=need==='hungry'?'bored':'hungry';
+  }
+  if(previous<100&&happiness===100){
+    $('lucky').hidden=false;
+    $('lucky').textContent=`🍀 A lucky message from ${name}: The kindness you give will find its way back to you. A little joy is waiting around the corner!`;
+  }
+  showNeed();
+  setTimeout(()=>{
+    $('pet').classList.remove(`acting-${action}`);
+    $('effects').replaceChildren();busy=false;
+    for(const id of ['pet','feed','play','restart'])$(id).disabled=false;
+  },1500);
+}
+$('feed').addEventListener('click',()=>interact('feed'));$('play').addEventListener('click',()=>interact('play'));$('pet').addEventListener('click',()=>interact('pat'));
+$('restart').addEventListener('click',()=>{$('home').hidden=true;$('setup').hidden=false;document.querySelector('input[name=species]:checked').focus()});
+</script>
+</body>
+</html>
