@@ -38,6 +38,22 @@ The implementation was checked through browser interactions and programmatic che
 
 There are still limitations. Needs alternate predictably between hungry and bored, and pats increase happiness without fulfilling either need, so users can reach the reward through repeated pats. Progress resets when the page reloads, and the cat’s purr is shown as text rather than sound. Future improvements could explore more varied requests and user feedback on how clearly the pet communicates its feelings.
 
+## The experience represented
+
+**What experience is your project representing?**
+
+> Little Buddy represents the experience of building a bond between an owner and a pet through everyday care and interaction. The user notices the pet’s needs, responds, and receives emotional feedback that can create a feeling of connection.
+
+**What part of that experience matters most?**
+
+> The most important part is feeling that the pet responds to your care. Seeing it become happier can create both a sense of connection and a sense of accomplishment: your actions matter, and you feel successful in caring for it.
+
+**Does the prototype represent that experience well?**
+
+> The prototype captures a simplified exchange between the user and the pet through requests, actions, and emotional reactions. Its expressions and animations help the interaction feel responsive. However, the responses are programmed and predictable. It leaves out the individuality, trust, and shared history that make a real bond develop over time.
+
+
+
 ## Run the project
 
 The experience is contained in `index.html` and does not require installing packages. Open that file directly in a browser, or start a local preview from this project’s folder:
